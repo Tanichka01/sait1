@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(to right, #ffcccc, #ffcc99, #ffff99, #ccffcc, #99ffcc, #99ccff, #cc99ff);
+    font-size: 20px; /* розмір тексту 20 */
+    font-family: Calibri, sans-serif; /* шрифт Calibri */
+    color: black; /* колір тексту чорний */
+    margin: 25px; /*  зовнішні відступи */
+    padding: 35px; /*  внутрішні відступи */
+    text-align: right; /* центрування тексту */
+}
+
+a {
+    color: black; /* колір тексту чорний */
+    font-style: italic; /* посилання в тексті виділити курсивом */
+}
+
+.container {
+    display: flex; /* використання flexbox */
+    justify-content: center; /* центрування по горизонталі */
+}
+
+.content {
+    text-align: right; /* вирівнювання тексту змісту по правому краю */
+    padding: 20px; /* відступи внутрішнього вмісту */
+    background-color:  rgba(240, 240, 240, 0.5); /* Прозорий фон */
+    max-width: 50%; /* Максимальна ширина контенту */
+    box-sizing: border-box; /* Ширина включає в себе padding */
+}
+
+.content {
+  background-color: rgba(240, 240, 240, 0.5); /* Прозорий фон */
+    max-width: 800px; /* Максимальна ширина контенту */
+    margin: 0 auto; /* Центруємо контент на сторінці */
+    padding: 20px; /* Додаємо відступи в середині контенту */
+}
+
+ul {
+    list-style-type: none; /* відміна маркування списку */
+    padding: 0; /* відміна внутрішніх відступів у списку */
+    text-decoration: none; /* відміна підкреслення тексту */
+}
+
+    
+
+img {
+    display: block; /* центрування картинок по центру */
+    margin: 0 auto; /* центрування картинок по центру */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {  text-align: center; /* заголовки по центру */
+    font-weight: bold; /* жирний */
+    text-decoration: none; /* не підкресленний */
+    font-size: 28px; /* розмір 28 */
+    color: black; /* колір чорний */
+}
+
+h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12, h13, h14, h15, h16, h17 {
+    text-align: center; /* заголовки по центру */
+    font-weight: bold; /* жирний */
+    text-decoration: none; /*не підкресленний */
+    font-size: 28px; /* розмір 28 */
+    color: black; /* колір чорний */
+}
+
+/*Стилі для форм */
+#feedback-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: linear-gradient(to right, #ffcccc, #ffcc99, #ffff99, #ccffcc, #99ffcc, #99ccff, #cc99ff); /* градієнт */
+}
+
+#feedback-form input,
+#feedback-form textarea,
+#feedback-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#feedback-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#feedback-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Додаткові стилі для полів, які не пройшли валідацію */
+input:invalid,
+textarea:invalid {
+  border-color: #dc3545;
+}
